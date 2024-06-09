@@ -1,0 +1,155 @@
+/*reset css to remove white spaces on header*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  pointer-events: auto;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: auto;
+  width: 10vw;
+  transition: transform 0.3s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainpage-initial {
+  overflow: hidden;
+  background: url("/assets/initial.png") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.initial-content {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 250px;
+  bottom: 150px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.initial-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.initial-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 5px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mainpage-initial .initial-text .initial-btn {
+  padding: 16px 32px;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.mainpage-initial .initial-text .initial-btn {
+  background-color: #ffff;
+  color: #000000;
+}
+
+/*create space between text and button*/
+.mainpage-initial .initial-text p {
+  margin-bottom: 45px;
+}
+
+.text-box {
+  position: relative;
+  top: 50px;
+}
+
+.text-box p {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.initial-content .text-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*need to set margin & padding to 0 to overwrite default browser settings*/
+/*https://getcssscan.com/blog/how-to-remove-bullets-from-li-css*/
+.footer-column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-column {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-column h4 {
+  font-size: 40px;
+  color: #000000;
+  position: relative;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer-column li {
+  list-style: none;
+  font-size: 27px;
+}
+
+.footer-column ul li a {
+  font-size: 27px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
