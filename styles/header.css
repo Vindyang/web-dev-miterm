@@ -11,22 +11,50 @@ body {
   z-index: 1;
 
   width: 100%;
-  display: flex;
   flex-direction: row;
   box-sizing: border-box;
 
   pointer-events: auto;
 }
 
-.left-section {
+.header-nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
-#logo {
+.logo {
+  cursor: pointer;
   height: auto;
+  margin-right: auto;
   width: 10vw;
   transition: transform 0.3s ease;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
 }
 
 /*add this to remove default html settings*/
@@ -51,7 +79,7 @@ a {
 .body-content {
   width: 100%;
   padding-left: 50px;
-  padding-right: 250px;
+  padding-right: 150px;
   bottom: 150px;
   position: absolute;
   margin-left: auto;
