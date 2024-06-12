@@ -1,0 +1,75 @@
+:root {
+    --primary: #7BBF4B;
+    --light: #EEEEE;
+    --dark: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fire sans', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z index 99 means layer (uppermost???shouldnt it be lowest layer) */
+    z-index: 99;
+    background-color: var(--dark);
+    /* first number is up down, second number left right */
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    /* hamburger, can't highlight by user*/
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    /* block mean element will take up full width of the whole line instead of sharing */
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+/* Moves the second span to the right by 10px */
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+}
+
+.menu {
+    display: none;
+}
