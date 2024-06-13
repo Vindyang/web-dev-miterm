@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kavoon;
+    src: url("/assets/Kavoon-Regular.ttf");
+}
+
 :root {
     --primary: #7BBF4B;
     --light: white;
@@ -8,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fire sans', sans-serif;
+    font-family: Kavoon;
 }
 
 .container {
@@ -28,19 +33,33 @@ nav {
     right: 0;
     /* z index 99 means layer (uppermost???shouldnt it be lowest layer) */
     z-index: 99;
-    background-color: var(--dark);
+    background-color: var(--light);
     /* first number is up down, second number left right */
     padding: 16px 32px;
-    border-bottom: 3px solid var(--primary);
+    /* border-bottom: 3px solid var(--primary); */
+    border: 3px solid;
+
+
 }
 
-/* Header 1 */
-h1 {
-    color: white;
+
+/* Header 1 - LOGO */
+.container h1 {
+    color: black;
     font-size: 20px;
     /* 900 is black */
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/* Hero Text 'tickets' */
+.hero-Text h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 28px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-transform: uppercase;
 }
 
@@ -69,7 +88,7 @@ h1 {
     margin-bottom: 5px;
     position: relative;
 
-    background-color: var(--light);
+    background-color: var(--dark);
     border-radius: 6px;
     z-index: 1;
 
@@ -100,6 +119,9 @@ h1 {
 
 .hamburger.is-active:hover span {
     background-color: var(--primary);
+    /* border-style: solid; */
+    /* border-color: black; */
+    border: 3px solid;
 }
 
 .menu {
@@ -111,19 +133,22 @@ h1 {
 
 /* selected colour */
 .menu a {
-    color: white;
-    margin: 0 16px;
+    color: var(--dark);
+    letter-spacing: 2px;
+    margin: 0 10px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.4s;
     padding: 8px 16px;
     border-radius: 99px;
 
+
 }
 
 .menu a.is-active,
 .menu a:hover {
     background-color: var(--primary);
+    border: 3px solid;
 }
 
 @media (min-width: 768px) {
@@ -134,4 +159,34 @@ h1 {
     .menu {
         display: flex;
     }
+}
+
+body,
+html {
+    height: 100%;
+    top: 197.199;
+    left: 0;
+}
+
+.hero-Image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/AdventureTime.jpg");
+
+    height: 400px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fit;
+    border: 3px solid;
+    position: relative;
+}
+
+.hero-Text {
+    text-align: center;
+    position: absolute;
+    /* 50% from the top of screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+
 }
