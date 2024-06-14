@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
 }
 
-.header {
+header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,7 +47,7 @@ nav ul li a:hover {
   background-color: #111;
 }
 
-.header .body-btn {
+header .body-btn {
   padding: 1em 2em;
   font-size: 13px;
   letter-spacing: 0.4px;
@@ -132,18 +132,63 @@ a {
   justify-content: flex-end;
 }
 
+/*section*/
+section {
+  width: 100%;
+  padding: 60px;
+}
+
+section.section2 {
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(124, 191, 74);
+}
+
+/*grids*/
+.grid-container {
+  width: 100%;
+  padding-top: 40px;
+  grid-gap: 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  object-fit: cover;
+}
+
+.grid-item h2,
+.grid-item h3,
+.grid-item p {
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+footer {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+}
+
 /*need to set margin & padding to 0 to overwrite default browser settings*/
 /*https://getcssscan.com/blog/how-to-remove-bullets-from-li-css*/
 .footer-column ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.footer {
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
 }
 
 .footer-row {
@@ -156,7 +201,6 @@ a {
 
 .footer-column {
   width: 25%;
-  padding: 0 15px;
 }
 
 .footer-column h4 {
@@ -202,6 +246,8 @@ a {
   font-size: 20px;
 }
 
+/*import social icon from font awesome*/
+/*https://fontawesome.com/start*/
 .fa-brands {
   padding: 15px;
   text-align: center;
