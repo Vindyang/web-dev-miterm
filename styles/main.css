@@ -142,6 +142,60 @@ section.section2 {
   width: 100%;
   padding: 40px;
   background-color: rgb(124, 191, 74);
+  background-size: cover;
+}
+
+section.section3 {
+  width: 100%;
+  height: 45vh;
+  padding: 40px;
+  background: url("/assets/birthday.png");
+  background-size: auto;
+  position: relative;
+}
+
+.section3 .overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 3;
+  padding: 50px;
+}
+
+.overlay-content h1 {
+  color: rgb(255, 228, 196);
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.overlay-content h3 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.overlay-content p {
+  color: #fff;
+}
+
+.overlay-content .body-btn {
+  padding: 16px 32px;
+  bottom: -60px;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  position: absolute;
+  border: none;
+  background: none;
+  box-shadow: none;
+  background-color: #ffff;
+  color: #000000;
 }
 
 /*grids*/
@@ -151,20 +205,20 @@ section.section2 {
   grid-gap: 100px;
   position: relative;
   display: grid;
-  grid-template-columns: auto auto auto;
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns*/
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .grid-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
   position: relative;
   object-fit: cover;
