@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Kavoon;
+
 }
 
 .container {
@@ -23,6 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
 }
 
 /* NAVIGATION CONTAINER*/
@@ -158,6 +161,7 @@ html {
     height: 100%;
     top: 197.199;
     left: 0;
+
 }
 
 .hero-Image {
@@ -247,4 +251,112 @@ html {
     color: lightgrey;
     font-size: 12px;
     padding: 4px 0;
+}
+
+/* FOOTER (note body)*/
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    background: white;
+    border: 3px solid;
+    padding: 25px 50px;
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* padding: 50px 100px; */
+
+}
+
+footer .footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+footer .footer-container .section h3 {
+    position: relative;
+    color: black;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .section p {
+    color: black;
+}
+
+footer .footer-container #sectionAboutUs #info {
+    list-style: none;
+}
+
+footer .footer-container #sectionAboutUs #info {
+    position: relative;
+}
+
+footer .footer-container #sectionAboutUs #info li {
+    display: grid;
+    grid-template-columns: 20px, 1fr;
+    margin-bottom: 16px;
+}
+
+footer .footer-container #sectionAboutUs #sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+}
+
+footer .footer-container #sectionAboutUs #sci li {
+    list-style: none;
+}
+
+/* footer .footer-container #sectionAboutUs .sci li a {
+display: inline-block;
+width: 36px;
+height: 36px;
+background: black;
+display: grid;
+align-content: center;
+justify-content: center;
+text-decoration: none;}  */
+
+footer .footer-container #sectionAboutUs #sci li a i {
+    color: black;
+    font-size: 20px;
+}
+
+footer .footer-container .sectionAmenities ul li {
+    list-style: none;
+}
+
+footer .footer-container .sectionAmenities ul li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .footer-container .sectionServices ul li {
+    list-style: none;
+}
+
+footer .footer-container .sectionServices ul li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .footer-container .sectionOthers ul li {
+    list-style: none;
+}
+
+footer .footer-container .sectionOthers ul li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
 }
