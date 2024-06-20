@@ -1,3 +1,23 @@
+/*font*/
+@font-face {
+  font-family: Kavoon;
+  src: url("/assets/Kavoon-Regular.ttf");
+}
+
+:root {
+  --primary: #7bbf4b;
+  --light: white;
+  --dark: #212121;
+}
+
+/*add this to remove default html settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kavoon;
+}
+
 /*reset css to remove white spaces on header*/
 html,
 body {
@@ -56,13 +76,6 @@ header .body-btn {
   box-shadow: none;
   background-color: #ffff;
   color: #000000;
-}
-
-/*add this to remove default html settings*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 a {
