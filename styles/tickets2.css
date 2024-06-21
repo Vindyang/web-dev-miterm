@@ -50,7 +50,6 @@ nav {
 .container h1 {
     color: black;
     font-size: 20px;
-    /* 900 is black */
     font-weight: 900;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -196,6 +195,116 @@ html {
     -webkit-text-stroke-color: black;
     text-transform: uppercase;
 }
+
+/* TICKETS */
+.TicketContainer {
+    padding: 15px 9%;
+}
+
+.TicketBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 10px;
+}
+
+.TicketHead {
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border: 3px solid;
+    border-radius: 5px;
+    letter-spacing: 5px;
+
+}
+
+.TicketContainer .TicketBox .Ticket .TicketHeadB {
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: black;
+    letter-spacing: 5px;
+}
+
+.TicketContent {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #FFB800;
+    color: black;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.TicketFees {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.Fees1 {
+    min-width: 50%;
+    text-align: center;
+    background-color: #86C8D1;
+    border: 3px solid black;
+    border-right: 1.5px solid black;
+    padding: 7px 0;
+}
+
+.Fees2 {
+    min-width: 50%;
+    text-align: center;
+    background-color: #D9D9D9;
+    border: 3px solid black;
+    padding: 7px 0;
+}
+
+.TicketDetails {
+    padding: 20px;
+    margin: 10px;
+}
+
+.ReferContent {
+    background-color: #86C8D1;
+    border: 3px solid black;
+}
+
+.ReferContent .Fees1 {
+    background-color: #4491B2;
+}
+
+.TicketContainer .TicketBox .Ticket a {
+    text-decoration: none;
+}
+
+.TicketContainer .TicketBox .Refer a {
+    text-decoration: none;
+}
+
+.TicketContainer .TicketBox .Special a {
+    text-decoration: none;
+}
+
+.select h2 {
+    font-weight: 900;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 33px;
+    gap: 6px;
+    text-align: center;
+    background-color: #C80E0E;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border-radius: 99px;
+    border: 3px solid black;
+}
+
+
 
 /* FREQUENTLY ASKED QUESTIONS CSS */
 
