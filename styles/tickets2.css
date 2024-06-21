@@ -268,7 +268,7 @@ html {
     margin: 10px;
 }
 
-.ReferContent {
+.TicketBox .ReferContent {
     background-color: #86C8D1;
     border: 3px solid black;
 }
@@ -276,6 +276,15 @@ html {
 .ReferContent .Fees1 {
     background-color: #4491B2;
 }
+
+#sword {
+    rotate: z 90deg;
+    height: 100%;
+    object-fit: contain;
+    /* object-position: 15% 70% */
+}
+
+.imageContainer {}
 
 .TicketContainer .TicketBox .Ticket a {
     text-decoration: none;
