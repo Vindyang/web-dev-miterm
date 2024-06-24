@@ -1,0 +1,37 @@
+.kavoon {
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#wholeNav {
+    background-color: #7BBF4B;
+
+}
+
+#CheckoutBox {
+    background-color: #90CCE6;
+}
+
+#WB {
+    background-color: white;
+}
+
+#outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#Particulars {
+    background-color: #D5D5D5;
+    letter-spacing: 2px;
+}
+
+#PayButton {
+    background-color: #77B568;
+    letter-spacing: 2px;
+}
+
+#footer {
+    background-color: #7BBF4B;
+}
