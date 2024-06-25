@@ -1,6 +1,4 @@
 //storing hamburger button
-const hamburger = document.querySelector(".hamburger");
-
-hamburger.addEventListener("click", function () {
+document.querySelector(".hamburger").addEventListener("click", function () {
   this.classList.toggle("is-active");
 });

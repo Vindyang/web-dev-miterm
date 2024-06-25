@@ -104,40 +104,28 @@ nav {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
   background-color: var(--dark);
   border-radius: 6px;
   z-index: 1;
-
-  transform-origin: 0 0;
-
-  transition: 0.4s;
+  transform-origin: center;
+  transition: 0.7s;
 }
 
 /* Hamburger animation + color */
-/* Moves the second span to the right by 10px */
-.hamburger:hover span:nth-child(2) {
-  transform: translateX(10px);
-  background-color: var(--primary);
-}
-
 .hamburger.is-active span:nth-child(1) {
-  transform: translate(0px, -2px) rotate(45deg);
+  transform: rotate(45deg) translateY(7px);
 }
 
 .hamburger.is-active span:nth-child(2) {
   opacity: 0;
-  transform: translateX(15px);
 }
 
 .hamburger.is-active span:nth-child(3) {
-  transform: translate(-3px, 3px) rotate(-45deg);
+  transform: rotate(-45deg) translateY(-7px);
 }
 
 .hamburger.is-active:hover span {
   background-color: var(--primary);
-  /* border-style: solid; */
-  /* border-color: black; */
   border: 3px solid;
 }
 
@@ -178,6 +166,7 @@ nav {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 .body-image-1 {
