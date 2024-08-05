@@ -199,6 +199,7 @@ a {
 .body-row .body-text p {
   font-size: 20px;
 }
+
 @media (max-width: 767px) {
   .body-content {
     padding-left: 20px;
@@ -237,6 +238,7 @@ a {
   .body-image-1 .body-text p {
     font-size: 13px;
   }
+
   .body-image-1 .body-text .body-btn {
     padding: 10px 20px;
     font-size: 15px;
